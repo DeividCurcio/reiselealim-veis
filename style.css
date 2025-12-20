@@ -1,0 +1,389 @@
+
+/* Banner de Natal */
+.christmas-banner {
+    background: linear-gradient(to bottom, #4A148C, #6A1B9A); /* Degradê vinho para combinar com seu cartão */
+    color: #D4AF37; /* Dourado */
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.santa-image {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    border: 5px solid #D4AF37; /* Borda dourada para luxo */
+}
+
+.banner-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 15px rgba(0,0,0,0.6);
+}
+
+.banner-text p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 15px auto;
+}
+
+.btn-whatsapp.large {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 35px;
+    font-size: 1.3rem;
+    background: #25D366;
+    color: white;
+}
+
+/* Responsivo */
+@media (max-width: 868px) {
+    .banner-content {
+        flex-direction: column-reverse; /* Texto em cima no celular */
+    }
+    .banner-text h2 {
+        font-size: 2.4rem;
+    }
+    .banner-text p {
+        font-size: 1.3rem;
+    }
+    .santa-image {
+        max-width: 350px;
+    }
+}
+
+/* Banner de Natal */
+.christmas-banner {
+    background: linear-gradient(to bottom, #4A148C, #6A1B9A); /* Vinho escuro com degradê */
+    color: #D4AF37;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.santa-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.banner-text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.banner-text p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .banner-content {
+        flex-direction: column;
+    }
+    .banner-text h2 {
+        font-size: 2.2rem;
+    }
+    .banner-text p {
+        font-size: 1.2rem;
+    }
+    .santa-image {
+        max-width: 300px;
+    }
+}
+/* Christmas Lights Banner */
+.christmas-lights {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+.bulb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 12px 2px rgba(0,0,0,0.15);
+    display: inline-block;
+    position: relative;
+    animation: blink 1.2s infinite alternate;
+}
+.bulb-red { background: #e53935; animation-delay: 0s; }
+.bulb-green { background: #43a047; animation-delay: 0.3s; }
+.bulb-yellow { background: #ffd600; animation-delay: 0.6s; }
+.bulb-blue { background: #1e88e5; animation-delay: 0.9s; }
+
+@keyframes blink {
+    0% { opacity: 1; box-shadow: 0 0 12px 2px rgba(0,0,0,0.15); }
+    50% { opacity: 0.4; box-shadow: 0 0 24px 8px rgba(255,255,255,0.3); }
+    100% { opacity: 1; box-shadow: 0 0 12px 2px rgba(0,0,0,0.15); }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #800020;
+    padding: 30px 0;
+    text-align: center;
+    color: #D4AF37;
+}
+
+.logo i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.logo span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+/* Main */
+.section-title {
+    text-align: center;
+    margin: 40px 0 30px;
+    color: #4A148C;
+    font-size: 2rem;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-content {
+    padding: 20px;
+    background: #fff;
+}
+
+.card-content h3 {
+    color: #4A148C;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-whatsapp i {
+    margin-right: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #800020;
+    color: #D4AF37;
+    padding: 40px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-grid h4 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.footer-grid p {
+    margin-bottom: 10px;
+}
+
+.social a {
+    color: #D4AF37;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* WhatsApp Float */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 10px;
+    }
+    .blog-grid {
+        gap: 20px;
+    }
+    .footer-grid {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    .logo span {
+        font-size: 1rem;
+    }
+    .section-title {
+        font-size: 1.2rem;
+    }
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .card-content {
+        padding: 15px;
+    }
+    header {
+        padding: 20px 0;
+    }
+    footer {
+        padding: 25px 0 10px;
+    }
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+    .logo i {
+        font-size: 32px;
+    }
+    .section-title {
+        font-size: 1rem;
+    }
+    .card-content h3 {
+        font-size: 1rem;
+    }
+    .btn-whatsapp {
+        padding: 8px 12px;
+        font-size: 0.95rem;
+    }
+    .footer-grid h4 {
+        font-size: 1rem;
+    }
+}
